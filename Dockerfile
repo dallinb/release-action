@@ -8,6 +8,6 @@ RUN pip install -r /tmp/requirements.txt --no-cache-dir \
   && apk add --no-cache git=2.30.2-r0
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-COPY gitchangelog.rc /usr/local/etc/gitchangelog.rc
+COPY .gitchangelog.rc /usr/local/etc/gitchangelog.rc
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

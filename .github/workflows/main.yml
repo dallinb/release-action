@@ -1,3 +1,4 @@
+---
 on: [push]
 
 jobs:
@@ -8,5 +9,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Try Running
-        id: hello
         uses: dallinb/release-action@0.1.1

@@ -1,0 +1,6 @@
+---
+name: 'Release Action'
+description: 'Run release associated tasks.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

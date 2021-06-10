@@ -1,0 +1,11 @@
+.dockerignore
+.git
+.gitignore
+.idea
+.python-version
+Dockerfile
+LICENSE
+Makefile
+README.md
+tests
+var

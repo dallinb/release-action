@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Try Running
         id: hello
-        uses: dallinb/release-action@0.1.0
+        uses: dallinb/release-action@0.1.1

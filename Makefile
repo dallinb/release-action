@@ -1,6 +1,7 @@
 all: lint build test
 
 build:
+	cp app.py .gitchangelog.rc
 	docker build -t release-action:latest .
 
 lint:

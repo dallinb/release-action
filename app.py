@@ -45,6 +45,7 @@ repo = Repo('.')
 print(f'INFO: Existing tags are {repo.tags}.')
 
 if 'CI' in os.environ and os.environ['CI'] == 'true':
+    print(f'INFO: unreleased_version_label is {unreleased_version_label}.')
     print(f'INFO: GITHUB_EVENT_NAME is {os.environ["GITHUB_EVENT_NAME"]}.')
     print(f'INFO: GITHUB_REF is {os.environ["GITHUB_REF"]}.')
     target_tag_exists = False
@@ -55,6 +56,7 @@ if 'CI' in os.environ and os.environ['CI'] == 'true':
             break
 
     if os.environ['GITHUB_EVENT_NAME'] == 'pull_request':
+        print(f'INFO: target tag exists {target_tag_exists}.')
         assert not target_tag_exists, f'Tag {unreleased_version_label} already exists.'
 
 

@@ -10,7 +10,7 @@ GitPython==3.1.17
 glob2==0.7
 idna==2.10
 iniconfig==1.1.1
-Mako==1.1.4
+Mako==1.2.2
 MarkupSafe==2.0.1
 mccabe==0.6.1
 packaging==20.9
